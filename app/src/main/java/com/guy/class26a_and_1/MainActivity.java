@@ -1,14 +1,23 @@
 package com.guy.class26a_and_1;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import com.google.android.material.button.MaterialButton;
 
 public class MainActivity extends AppCompatActivity {
+
+    private int currentNumber = 0;
+    private TextView numberDisplayBox;
+    private MaterialButton btnPlus;
+    private MaterialButton btnMinus;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
